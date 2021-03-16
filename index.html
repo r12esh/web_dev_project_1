@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodster.io</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0px;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        .header {
+            overflow: auto;
+            width: auto;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            position: fixed;
+            top: -5px;
+            left: 220px;
+
+        }
+
+        .li:hover {
+            border: 4px solid rgb(208, 255, 1);
+            background-color: rgb(255, 255, 255)
+        }
+
+        .li {
+            list-style: none;
+            float: left;
+            padding: 10px 18px;
+            margin: -25px 0px 0px 0px;
+            background-color: rgba(255, 255, 255, 0.411);
+            color: black;
+
+
+        }
+
+        .li:hover {
+            cursor: pointer;
+        }
+
+        #img1 {
+            background-image: url("bg.jpg");
+            background-size: cover;
+            height: 100%;
+            margin-top: -17px;
+            padding: 95px 1px 1px 130px;
+
+
+
+        }
+
+
+
+        #ribbon1 {
+            background-image: url(ribbon.png);
+            position: fixed;
+            top: 0px;
+            left: 180.4px;
+            height: 55px;
+            width: 128px;
+            background-repeat: no-repeat;
+
+        }
+
+        #ribbon2 {
+            background-image: url(ribbon.png);
+            position: fixed;
+            top: 0px;
+            right: 208px;
+            height: 55px;
+            width: 128px;
+            background-repeat: no-repeat;
+        }
+
+        #logo {
+
+            background-image: url(logo.png);
+            background-size: cover;
+            border: 3px solid rgb(52, 119, 113);
+            height: 50px;
+            width: 227px;
+            position: fixed;
+            top: 0px;
+            left: -2px;
+        }
+
+        #logo:hover {
+            cursor: pointer;
+        }
+
+        #searchbar {
+            width: 233px;
+            height: 47px;
+            background-color: rgb(0 0 0 / 56%);
+            position: fixed;
+            top: -10px;
+            right: 0px;
+            border: #ff00f061 3px solid;
+            font-size: 19px;
+            color: rgb(0, 0, 0);
+            outline: none;
+        }
+
+        #searchbar:hover {
+            border: #ff63be 3px solid;
+        }
+
+        #searchbar:active {
+            border: #ff63be 3px solid;
+            background-color: rgb(255, 255, 255);
+        }
+
+        #searchbar:visited {
+            border: #ff63be 3px solid;
+            background-color: rgb(255, 255, 255);
+        }
+
+        #searchbar:focus {
+            background-color: white;
+            border: #ff63be 3px solid;
+        }
+
+        #info {
+            border: 2px rgba(0, 0, 0, 0) solid;
+            width: 730px;
+            height: 550px;
+            padding: 1px 15px 1px 1px;
+            border-radius: 30px;
+            font-family: 'Quicksand', sans-serif;
+            padding-left: 50px;
+            background-color: #0000009c;
+            text-align: left;
+
+        }
+
+        #info h1 {
+            font-size: 60px;
+            line-height: 60px;
+            color: blanchedalmond;
+        }
+
+        #info p {
+            font-size: 25px;
+            line-height: 33px;
+            color: rgb(192, 192, 192);
+        }
+
+        #info a:hover {
+            text-decoration: underline 5px white;
+        }
+
+        #welcome {
+            box-sizing: border-box;
+            color: rgb(255, 144, 190);
+            font-family: 'Quicksand', sans-serif;
+            border: 2px solid rgba(255, 0, 0, 0);
+            width: 1000px;
+            height: 130px;
+            font-size: 80px;
+            padding-left: 0px;
+            padding-bottom: 10px;
+        }
+
+        #newsletter {
+            border: 2px solid white;
+            float: none;
+            width: 700px;
+            border-radius: 40px;
+            background-color: rgba(0, 0, 0, 0.671);
+            outline: none;
+        }
+
+        #img2 {
+            background-image: url("bg2.jpg");
+            background-size: cover;
+            height: 100%;
+            padding-top: 100px;
+            padding-left: 485px;
+        }
+
+        .news {
+            border: 2px solid rgb(161, 102, 24);
+            padding: 50px 0px 0px 70px;
+            width: 465px;
+            height: 310px;
+            background-color: rgba(31, 15, 0, 0.377);
+        }
+
+        input{
+            width:370px;
+            height: 40px;
+            margin: 10px auto;
+            border-radius: 100px;
+            padding: 0px 0px 0px 20px;
+            border: wheat;
+            font-size: 20px;
+        }
+        #submit{
+            margin-left: 90px;
+            width: 200px;
+            border: 2px solid rgb(255, 255, 255);
+            padding: 10px 0px 18px 0px;
+            height: 30px;
+            font-family: quicksand, sans-serif;
+            font-size: 30px;
+            text-align: center;
+            outline: none;
+            cursor: pointer;
+            color: rgba(255, 129, 150, 0.829);
+        }
+        #submit:hover{
+            background-color: rgba(151, 151, 151, 0.459);
+            color: rgb(255, 153, 0);
+        }
+        #submit:active{
+            color:rgb(255, 153, 0);
+            background-color: white;
+        }
+        *{
+            outline: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="ribbon1"></div>
+    <div id="ribbon2"></div>
+    <header>
+        <div class="header">
+            <ul>
+                <a href="https://hostcooking.com" target="_blank">
+                    <li class="li">Home</li>
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                    <li class="li">Learn Fundamentals</li>
+                </a>
+                <a href="https://amazon.com" target="_blank">
+                    <li class="li">Buy Kitchenware</li>
+                </a>
+                <a href="https://instagram.com/r12esh" target="_blank">
+                    <li class="li">Contact me</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+
+    <div id="logo"><a href="https://hostcooking.com" target="_blank"><img alt="logo" src="logo.png" width="228"
+                height="50"></a></div>
+
+
+    <ul>
+        <div>
+            <input type="text" placeholder="Search foodster.io &#128269" id="searchbar">
+        </div>
+    </ul>
+
+    <div id="img1">
+
+        <div id="welcome">
+            Welcome to Foodster.io!
+        </div>
+
+
+        <div id="info">
+            <h1>
+                Let the food eat you!
+            </h1>
+            <p>
+                I post the Best Food content in the world (probably) so get ready to drool and get fat with my new
+                cheesy recipies on every episode of "Cheezy Sunday".
+            </p>
+            <p>
+                I post Healthy Food recipies too on every Friday. Be sure to check out new episodes of "Healthy Friday"
+            </p>
+            <p>
+                Also Check out my Social handles On <a href="https://instagram.com/r12esh" target="_blank"
+                    style="color: rgb(255, 93, 220);">Instagram</a>, <a href="https://youtube.com" target="_blank"
+                    style="color: rgb(255, 64, 64);">Youtube</a> and <a href="https://facebook.com" target="_blank"
+                    style="color: rgb(94, 94, 235);">Facebook</a> Where I post behind the scenes, personal life and
+                other hobbies!
+            </p>
+        </div>
+    </div>
+    <div id="space"></div>
+    <div id="img2">
+        <div class="news">
+            <div class="input">
+                <input type="text" name="name" placeholder="Your Name">
+            </div>
+
+            <div>
+                <input type="text" name="name" placeholder="E-mail">
+            </div>
+
+            <div>
+                <input type="text" name="name" placeholder="Contact Number">
+            </div>
+            <p id="submit">
+                Submit
+            </p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
