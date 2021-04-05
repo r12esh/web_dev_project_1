@@ -1,5 +1,5 @@
 # web_dev_project_1
-A simple webpage for a food blogging website. <br/>
+A simple webpage Using only HTMl and CSS for a food blogging website. <br/>
 The Logo used here is not an official logo of any company. <br/>
 
 #### Want to Preview in your Browser? <br/>
